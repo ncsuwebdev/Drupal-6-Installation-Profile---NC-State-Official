@@ -129,6 +129,8 @@ function ncstateofficial_profile_task_list() {
     'task_configure_backup_migrate' => st('Configure Backup/Migrate'),
   	'task_enable_feature_ncstate_slider' => st('Enable Home Page Slider Feature'),
   	'task_configure_feature_ncstate_slider' => st('Configure Home Page Slider Feature'),
+  	'task_enable_feature_ncstate_photo_gallery' => st('Enable Photo Gallery Feature'),
+  	'task_configure_feature_ncstate_photo_gallery' => st('Configure Photo Gallery Feature'),
     'task_create_first_node' => st('Create First Node / Set as Home Page'),
   	'task_create_standard_menus' => st('Create Standard Menus'),
   	'task_create_standard_menu_links' => st('Create Standard Menu Links'),
@@ -220,6 +222,18 @@ function ncstateofficial_profile_tasks(&$task, $url) {
 	// Run 'task_configure_feature_ncstate_slider' task
 	if ($task == 'task_configure_feature_ncstate_slider') {
 	  configure_feature_ncstate_slider();
+	  $task = 'task_enable_feature_ncstate_photo_gallery';
+	}
+	
+	// 	Run 'task_enable_feature_ncstate_photo_gallery' task
+	if ($task == 'task_enable_feature_ncstate_photo_gallery') {
+	  enable_feature_ncstate_photo_gallery();
+	  $task = 'task_configure_feature_ncstate_photo_gallery';
+	}
+	
+	// Run 'task_configure_feature_ncstate_photo_gallery' task
+	if ($task == 'task_configure_feature_ncstate_photo_gallery') {
+	  configure_feature_ncstate_photo_gallery();
 	  $task = 'task_create_first_node';
 	}
 	
@@ -683,6 +697,38 @@ function configure_feature_ncstate_slider() {
 	taxonomy_save_term($term);
           
 	watchdog('ncstateofficial_profile', 'Configured home page slider feature');
+	
+};
+
+/**
+ * Enables photo gallery feature
+ */
+function enable_feature_ncstate_photo_gallery() {
+    
+	// enable these other modules in this function, because ctools needs to exist before these will work.
+	// otherwise you will get an error like:
+	// "Fatal error: Call to undefined function ctools_include() in ... context/context.module on line 459"
+	
+	$enable_modules = array(
+  		'context',
+    	'imagefield',
+    	'filefield',	
+    	'ncstate_photo_gallery',
+  	);
+  	
+  	module_enable($enable_modules);
+
+  	watchdog('ncstateofficial_profile', 'Enabled photo gallery feature');
+};
+
+/**
+ * Configures photo gallery feature
+ */
+function configure_feature_ncstate_photo_gallery() {
+              
+	// no steps yet...just a place holder for now
+	
+	watchdog('ncstateofficial_profile', 'Configured photo gallery feature');
 	
 };
 

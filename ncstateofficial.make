@@ -113,3 +113,6 @@ projects[ncsuroles][location] = "http://drupal.ncsu.edu/features/fserver"
 
 projects[ncstate_slider][subdir] = "ncstate/features"
 projects[ncstate_slider][location] = http://drupal.ncsu.edu/features/fserver
+
+projects[ncstate_photo_gallery][subdir] = "ncstate/features"
+projects[ncstate_photo_gallery][location] = http://drupal.ncsu.edu/features/fserver
