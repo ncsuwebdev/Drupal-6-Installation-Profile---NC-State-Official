@@ -809,7 +809,7 @@ function configure_blocks() {
 	      'theme' => get_theme_name(),
 	      'status' => 1,
 	      'region' => 'left_primary_menu',
-	      'title' => '<none>',
+	      'title' => 'Main Menu',
 	      'weight' => '-8',
 	    ),
 	    'search' => array(
