@@ -66,7 +66,6 @@ projects[calendar][subdir] = contrib
 projects[menu_breadcrumb][subdir] = contrib
 projects[feeds][subdir] = contrib
 projects[css_injector][subdir] = contrib
-projects[extlink][subdir] = contrib
 projects[backup_migrate][subdir] = contrib
 projects[strongarm][subdir] = contrib
 projects[features][subdir] = contrib
@@ -101,9 +100,6 @@ projects[ncstate_official][location] = "http://drupal.ncsu.edu/features/fserver"
 
 projects[wraplogin][subdir] = "ncstate"
 projects[wraplogin][location] = "http://drupal.ncsu.edu/features/fserver"
-
-projects[ncstatebrandingbar][subdir] = "ncstate"
-projects[ncstatebrandingbar][location] = "http://drupal.ncsu.edu/features/fserver"
 
 projects[ncsuphplibrary][subdir] = "ncstate"
 projects[ncsuphplibrary][location] = "http://drupal.ncsu.edu/features/fserver"

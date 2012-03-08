@@ -61,7 +61,6 @@ function ncstateofficial_profile_modules() {
     'content',
     'css_injector',
     'ctools',
-    'extlink',
     'features',
   	'gcal_events',
     'image_attach',
@@ -99,7 +98,6 @@ function ncstateofficial_profile_modules() {
   	'wysiwyg',
   );
   $custom_modules = array(
-  	'ncstatebrandingbar',
   	'ncsuphplibrary',  
     'ncsuroles',
   	'wraplogin',
@@ -131,8 +129,6 @@ function ncstateofficial_profile_task_list() {
     'task_configure_backup_migrate' => st('Configure Backup/Migrate'),
   	'task_enable_feature_ncstate_slider' => st('Enable Home Page Slider Feature'),
   	'task_configure_feature_ncstate_slider' => st('Configure Home Page Slider Feature'),
-  	'task_enable_feature_ncstateofficial_photo_gallery' => st('Enable Photo Gallery Feature'),
-  	'task_configure_feature_ncstateofficial_photo_gallery' => st('Configure Photo Gallery Feature'),
     'task_create_first_node' => st('Create First Node / Set as Home Page'),
   	'task_create_standard_menus' => st('Create Standard Menus'),
   	'task_create_standard_menu_links' => st('Create Standard Menu Links'),
@@ -224,21 +220,9 @@ function ncstateofficial_profile_tasks(&$task, $url) {
 	// Run 'task_configure_feature_ncstate_slider' task
 	if ($task == 'task_configure_feature_ncstate_slider') {
 	  configure_feature_ncstate_slider();
-	  $task = 'task_enable_feature_ncstateofficial_photo_gallery';
-	}
-	
-	// Run 'task_enable_feature_ncstateofficial_photo_gallery' task
-	if ($task == 'task_enable_feature_ncstateofficial_photo_gallery') {
-	  enable_feature_ncstateofficial_photo_gallery();
-	  $task = 'task_configure_feature_ncstateofficial_photo_gallery';
-	}
-	
-	// Run 'task_configure_feature_ncstateofficial_photo_gallery' task
-	if ($task == 'task_configure_feature_ncstateofficial_photo_gallery') {
-	  configure_feature_ncstateofficial_photo_gallery();
 	  $task = 'task_create_first_node';
 	}
-  
+	
   	// Run 'task_create_first_node' task
 	if ($task == 'task_create_first_node') {
     	create_first_node();
@@ -462,15 +446,6 @@ function configure_variables() {
   // Configure menu_breadcrumb settings
   variable_set('menu_breadcrumb_append_node_url', 0);
   watchdog('ncstateofficial_profile', 'Configured menu_breadcrumb settings');
-
-  // Configure extlinks settings
-  variable_set('extlink_target', '_blank');
-  variable_set('extlink_subdomains', 1);
-  watchdog('ncstateofficial_profile', 'Configured extlinks settings');
-
-  // configure nc state brand bar settings
-  variable_set('ncstatebrandingbar_select_version', 'red_on_white__centered');
-  watchdog('ncstateofficial_profile', 'Configured nc state brand bar');
   
 }
 
@@ -711,38 +686,6 @@ function configure_feature_ncstate_slider() {
 	
 };
 
-/**
- * Enables photo gallery feature
- */
-function enable_feature_ncstateofficial_photo_gallery() {
-    
-	// enable these other modules in this function, because ctools needs to exist before these will work.
-	// otherwise you will get an error like:
-	// "Fatal error: Call to undefined function ctools_include() in ... context/context.module on line 459"
-	
-	$enable_modules = array(
-  		'context',
-    	'imagefield',
-    	'filefield',	
-    	'ncstateofficial_photo_gallery',
-  	);
-  	
-  	module_enable($enable_modules);
-
-  	watchdog('ncstateofficial_profile', 'Enabled photo gallery feature');
-};
-
-/**
- * Configures photo gallery feature
- */
-function configure_feature_ncstateofficial_photo_gallery() {
-              
-	// no steps yet...just a place holder for now
-	
-	watchdog('ncstateofficial_profile', 'Configured photo gallery feature');
-	
-};
-
 function create_first_node() {
 
 	$node = new StdClass();
@@ -814,21 +757,12 @@ function configure_blocks() {
 	db_query("UPDATE {blocks} SET status = 0 where theme = '%s'", get_theme_name());
 	
 	$blocks = array(
-	    'footer-links' => array(
+	    'menu-main-menu' => array(
 	      'module' => 'menu',
-	      'delta' => 'menu-footer-links',
+	      'delta' => 'menu-main-menu',
 	      'theme' => get_theme_name(),
 	      'status' => 1,
-	      'region' => 'footer_menu',
-	      'title' => '<none>',
-	      'weight' => '-9',
-	    ),
-	    'networking-links' => array(
-	      'module' => 'menu',
-	      'delta' => 'menu-horiz-main-menu',
-	      'theme' => get_theme_name(),
-	      'status' => 1,
-	      'region' => 'horizontal_main_menu',
+	      'region' => 'left_primary_menu',
 	      'title' => '<none>',
 	      'weight' => '-8',
 	    ),
@@ -846,7 +780,7 @@ function configure_blocks() {
 	      'delta' => '0',
 	      'theme' => get_theme_name(),
 	      'status' => 1,
-	      'region' => 'header_small_right_menu',
+	      'region' => 'left_primary_menu',
 	      'title' => '<none>',
 	      'weight' => '-6',
 	    ),
