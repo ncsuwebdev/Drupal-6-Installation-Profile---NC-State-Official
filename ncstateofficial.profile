@@ -782,10 +782,10 @@ function create_standard_menus() {
       'title' => 'Footer Links',
       'description' => 'These links will appear in the footer region.'
     ),
-    'Horiz-Main-Menu' => array(
-      'menu_name' => 'menu-horiz-main-menu',
-      'title' => 'Horizontal Main Menu',
-      'description' => 'These links will appear in the horizontal main menu region.'
+    'main-menu-links' => array(
+      'menu_name' => 'main-menu-links',
+      'title' => 'Main Menu Links',
+      'description' => 'These links will appear in the left main menu region.'
     ),
   );
 
