@@ -782,8 +782,8 @@ function create_standard_menus() {
       'title' => 'Footer Links',
       'description' => 'These links will appear in the footer region.'
     ),
-    'main-menu-links' => array(
-      'menu_name' => 'main-menu-links',
+    'main' => array(
+      'menu_name' => 'menu-main-links',
       'title' => 'Main Menu Links',
       'description' => 'These links will appear in the left main menu region.'
     ),
@@ -847,13 +847,13 @@ function create_standard_menu_links() {
         'weight' => -43,
       ),
       'front' => array(
-        'menu_name' => 'menu-horiz-main-menu',
+        'menu_name' => 'menu-main-links',
         'link_path' => '<front>',
         'link_title' => 'Home',
         'weight' => -50,
       ),
       'feedback' => array(
-        'menu_name' => 'menu-horiz-main-menu',
+        'menu_name' => 'menu-main-links',
         'link_path' => 'contact',
         'link_title' => 'Contact Us',
         'weight' => -49,
@@ -880,13 +880,13 @@ function configure_blocks() {
         'title' => '<none>',
         'weight' => '-9',
       ),
-      'main-menu-links' => array(
+      'menu-main-links' => array(
         'module' => 'menu',
-        'delta' => 'menu-main-menu',
+        'delta' => 'menu-main-links',
         'theme' => get_theme_name(),
         'status' => 1,
         'region' => 'left_primary_menu',
-        'title' => '<none>',
+        'title' => 'Main Menu',
         'weight' => '-8',
       ),
       'search' => array(
