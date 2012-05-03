@@ -97,6 +97,7 @@ function ncstateofficial_profile_modules() {
     'wysiwyg',
   );
   $custom_modules = array(
+    'ncstateofficialgeneralfeature', 
     'ncsuphplibrary',  
     'ncsuroles',
     'wraplogin',
