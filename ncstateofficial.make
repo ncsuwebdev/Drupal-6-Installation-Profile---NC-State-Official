@@ -5,7 +5,7 @@
 core = 6.x
 api = 2
 
-projects[drupal][version] = 6.25
+projects[drupal][version] = 6.26
 
 ; ************************
 ; CONTRIB MODULES
@@ -87,7 +87,7 @@ projects[imagecache_profiles][subdir] = contrib
 projects[imagecache_profiles][version] = 1.4-rc1
 
 projects[imagecache][subdir] = contrib
-projects[imagecache][version] = 2.0-beta12
+projects[imagecache][version] = 2.0-rc1
 
 projects[imagefield][subdir] = contrib
 projects[imagefield][version] = 3.10
@@ -144,7 +144,7 @@ projects[phone][subdir] = contrib
 projects[phone][version] = 2.18
 
 projects[readonlymode][subdir] = contrib
-projects[readonlymode][version] = 1.0
+projects[readonlymode][version] = 1.1
 
 projects[recaptcha][subdir] = contrib
 projects[recaptcha][version] = 1.7
@@ -201,7 +201,7 @@ projects[webform_validation][subdir] = contrib
 projects[webform_validation][version] = 1.5
 
 projects[webform][subdir] = contrib
-projects[webform][version] = 3.17
+projects[webform][version] = 3.18
 
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.4
@@ -232,7 +232,7 @@ projects[ncstateofficialgeneralfeature][download][url] = git://github.com/ncsuwe
 projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.2
 
 projects[ncstate_official][subdir] = ncstate
-projects[ncstate_official][version] = 1.5
+projects[ncstate_official][version] = 1.6
 projects[ncstate_official][location] = "http://drupal.ncsu.edu/features/fserver"
 
 projects[wraplogin][subdir] = ncstate
