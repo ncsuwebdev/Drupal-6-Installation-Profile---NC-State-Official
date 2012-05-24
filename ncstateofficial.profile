@@ -928,16 +928,24 @@ function configure_gcal_events() {
   // get gcal_events directory
   $modulePath = drupal_get_path('module', 'gcal_events'); 
   
+  $cacheParent = file_directory_path() . '/gcal_events';
+  $cachePath = $cacheParent . '/cache';
+
   $simplePieLibraryPath = libraries_get_path('simplepie');
   
-  // create cache directory in gcal_events directory, make writable by server
-  if(!is_dir($modulePath . '/cache')) {
-    mkdir($modulePath . '/cache', 0755, false); 
+  // module stores cache in files directory (since dev version)
+
+  // create cache directory in files directory, make writable by server
+  if(!is_dir($cacheParent)) {
+    mkdir($cacheParent, 0755, false); 
+  }
+  if(!is_dir($cachePath)) {
+    mkdir($cachePath, 0777, false); 
   }
 
   // check file permissions, if not 0755 then set
-  if(substr(sprintf('%o', fileperms($modulePath . '/cache')), -4) != 0755) {
-    chmod($modulePath . '/cache', 0755);
+  if(substr(sprintf('%o', fileperms($cachePath)), -4) != 0777) {
+    chmod($cachePath, 0777);
   }
 
   
@@ -949,7 +957,8 @@ function configure_gcal_events() {
   watchdog('ncstateofficial_profile', 'Configured GCal Events Module');
   
   variable_set('gcal_events_num_blocks', 1);
-  
+  variable_set('gcal_events_item_list', 0);
+
   $delta = 0;
   $private_id = '927973de0296fbd3520681e5bd96f921';
   
