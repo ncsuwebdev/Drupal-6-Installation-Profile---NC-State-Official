@@ -161,6 +161,9 @@ projects[shadowbox][version] = 4.x-dev
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.1
 
+projects[system_perm][subdir] = contrib
+projects[system_perm][version] = 1.0
+
 projects[tinymce_node_picker][subdir] = contrib
 projects[tinymce_node_picker][version] = 2.1
 
