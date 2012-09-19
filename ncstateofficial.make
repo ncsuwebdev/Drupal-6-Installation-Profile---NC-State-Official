@@ -134,6 +134,9 @@ projects[mimemail][version] = 1.0
 projects[nodeaccess][subdir] = contrib
 projects[nodeaccess][version] = 1.3
 
+projects[node_convert][subdir] = contrib
+projects[node_convert][version] = 1.7
+
 projects[nodereference_url][subdir] = contrib
 projects[nodereference_url][version] = 1.11
 
