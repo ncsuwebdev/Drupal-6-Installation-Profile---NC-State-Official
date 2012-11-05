@@ -45,7 +45,7 @@ projects[css_injector][subdir] = contrib
 projects[css_injector][version] = 1.4
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.8
+projects[ctools][version] = 1.9
 
 projects[date][subdir] = contrib
 projects[date][version] = 2.8
@@ -168,7 +168,7 @@ projects[shadowbox][subdir] = contrib
 projects[shadowbox][version] = 4.x-dev
 
 projects[strongarm][subdir] = contrib
-projects[strongarm][version] = 2.1
+projects[strongarm][version] = 2.2
 
 projects[system_perm][subdir] = contrib
 projects[system_perm][version] = 1.0
@@ -244,7 +244,7 @@ projects[ncstateofficialgeneralfeature][download][url] = git://github.com/ncsuwe
 projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.2
 
 projects[ncstate_official][subdir] = ncstate
-projects[ncstate_official][version] = 1.6
+projects[ncstate_official][version] = 1.7
 projects[ncstate_official][location] = "http://drupal.ncsu.edu/features/fserver"
 
 projects[wraplogin][subdir] = ncstate
