@@ -949,10 +949,9 @@ function configure_gcal_events() {
     chmod($cachePath, 0777);
   }
 
-
-  // copy simplepie.inc from libraries directory to gcal_events directory
+  // copy SimplePie.compiled.php from libraries directory to gcal_events directory as simplepie.inc
   if(!file_exists($modulePath . '/simplepie.inc')) {
-    copy($simplePieLibraryPath . '/simplepie.inc', $modulePath . '/simplepie.inc');
+    copy($simplePieLibraryPath . '/simplepie/simplepie.inc', $modulePath . '/simplepie.inc');
   }
 
   watchdog('ncstateofficial_profile', 'Configured GCal Events Module');
