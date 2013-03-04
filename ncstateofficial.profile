@@ -956,7 +956,7 @@ function configure_gcal_events() {
 
   watchdog('ncstateofficial_profile', 'Configured GCal Events Module');
 
-  variable_set('gcal_events_num_blocks', 1);
+  variable_set('gcal_events_num_blocks', 3);
   variable_set('gcal_events_item_list', 0);
 
   $delta = 0;
@@ -983,12 +983,12 @@ function configure_gcal_events() {
   $blocks = array(
       'gcal_events_private_id_'. $delta => array(
           'module'                => 'gcal_events',
-        'delta'                 => $delta,
-        'title'                 => 'NC State Academic Calendar',
-      'region'                => 'right_above_sidebar',
-      'weight'                => '-6',
-      'status'                => 1,
-      'theme'                 => get_theme_name(),
+          'delta'                 => $delta,
+          'title'                 => 'NC State Academic Calendar',
+          'region'                => 'right_main_sidebar',
+          'weight'                => '-6',
+          'status'                => 1,
+          'theme'                 => get_theme_name(),
       ),
     );
 
