@@ -212,6 +212,9 @@ projects[views_slideshow][version] = 3.0
 projects[views][subdir] = contrib
 projects[views][version] = 2.16
 
+projects[votingapi][subdir] = contrib
+projects[votingapi][version] = 2.3
+
 projects[webform_validation][subdir] = contrib
 projects[webform_validation][version] = 1.5
 
