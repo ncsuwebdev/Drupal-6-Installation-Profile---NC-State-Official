@@ -71,6 +71,9 @@ projects[feeds][version] = 1.0-beta11
 projects[filefield][subdir] = contrib
 projects[filefield][version] = 3.10
 
+projects[fivestar][subdir] = contrib
+projects[fivestar][version] = 1.20
+
 projects[gcal_events][subdir] = contrib
 projects[gcal_events][version] = 1.4
 
