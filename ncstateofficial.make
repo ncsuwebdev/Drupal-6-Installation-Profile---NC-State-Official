@@ -105,7 +105,7 @@ projects[imce_wysiwyg][subdir] = contrib
 projects[imce_wysiwyg][version] = 1.1
 
 projects[imce][subdir] = contrib
-projects[imce][version] = 2.4
+projects[imce][version] = 2.5
 
 projects[job_scheduler][subdir] = contrib
 projects[job_scheduler][version] = 1.0-beta3
@@ -156,7 +156,7 @@ projects[phone][subdir] = contrib
 projects[phone][version] = 2.18
 
 projects[readonlymode][subdir] = contrib
-projects[readonlymode][version] = 1.1
+projects[readonlymode][version] = 1.2
 
 projects[recaptcha][subdir] = contrib
 projects[recaptcha][version] = 1.7
@@ -250,7 +250,7 @@ projects[ncstateofficialgeneralfeature][download][url] = git://github.com/ncsuwe
 projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.2
 
 projects[ncstate_official][subdir] = ncstate
-projects[ncstate_official][version] = 2.4
+projects[ncstate_official][version] = 2.5
 projects[ncstate_official][location] = "http://drupal.ncsu.edu/features/fserver"
 
 projects[wraplogin][subdir] = ncstate
@@ -262,7 +262,7 @@ projects[ncstatebrandingbar][version] = 1.6
 projects[ncstatebrandingbar][location] = http://drupal.ncsu.edu/features/fserver
 
 projects[ncsuphplibrary][subdir] = ncstate
-projects[ncsuphplibrary][version] = 1.0-2
+projects[ncsuphplibrary][version] = 1.0-3
 projects[ncsuphplibrary][location] = http://drupal.ncsu.edu/features/fserver
 
 projects[ncsuroles][subdir] = ncstate
