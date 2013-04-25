@@ -102,6 +102,7 @@ function ncstateofficial_profile_modules() {
     'ncsuphplibrary',
     'ncsuroles',
     'wraplogin',
+    'accessibletargetblankfilter',
   );
 
   return array_merge($core_modules, $contrib_modules, $custom_modules);

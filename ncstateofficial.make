@@ -250,7 +250,7 @@ projects[ncstateofficialgeneralfeature][download][url] = git://github.com/ncsuwe
 projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.2
 
 projects[ncstate_official][subdir] = ncstate
-projects[ncstate_official][version] = 2.5
+projects[ncstate_official][version] = 2.6
 projects[ncstate_official][location] = "http://drupal.ncsu.edu/features/fserver"
 
 projects[wraplogin][subdir] = ncstate
@@ -262,12 +262,16 @@ projects[ncstatebrandingbar][version] = 1.6
 projects[ncstatebrandingbar][location] = http://drupal.ncsu.edu/features/fserver
 
 projects[ncsuphplibrary][subdir] = ncstate
-projects[ncsuphplibrary][version] = 1.0-3
+projects[ncsuphplibrary][version] = 1.0-2
 projects[ncsuphplibrary][location] = http://drupal.ncsu.edu/features/fserver
 
 projects[ncsuroles][subdir] = ncstate
 projects[ncsuroles][version] = 1.2
 projects[ncsuroles][location] = http://drupal.ncsu.edu/features/fserver
+
+projects[accessibletargetblankfeature][subdir] = ncstate
+projects[accessibletargetblankfeature][version] = 1.0
+projects[accessibletargetblankfeature][location] = http://drupal.ncsu.edu/features/fserver
 
 ; ************************
 ; NC STATE FEATURES
