@@ -269,9 +269,9 @@ projects[ncsuroles][subdir] = ncstate
 projects[ncsuroles][version] = 1.2
 projects[ncsuroles][location] = http://drupal.ncsu.edu/features/fserver
 
-projects[accessibletargetblankfeature][subdir] = ncstate
-projects[accessibletargetblankfeature][version] = 1.0
-projects[accessibletargetblankfeature][location] = http://drupal.ncsu.edu/features/fserver
+projects[accessibletargetblankfilter][subdir] = ncstate
+projects[accessibletargetblankfilter][version] = 1.0
+projects[accessibletargetblankfilter][location] = http://drupal.ncsu.edu/features/fserver
 
 ; ************************
 ; NC STATE FEATURES
