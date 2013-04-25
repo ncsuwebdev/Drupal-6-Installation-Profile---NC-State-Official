@@ -247,7 +247,7 @@ projects[ncstateofficialgeneralfeature][type] = module
 projects[ncstateofficialgeneralfeature][subdir] = ncstate
 projects[ncstateofficialgeneralfeature][download][type] = git
 projects[ncstateofficialgeneralfeature][download][url] = git://github.com/ncsuwebdev/Drupal-6-NC-State-Official-General-Feature.git
-projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.2
+projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.3
 
 projects[ncstate_official][subdir] = ncstate
 projects[ncstate_official][version] = 2.6
