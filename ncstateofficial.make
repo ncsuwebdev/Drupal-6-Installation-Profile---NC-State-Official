@@ -20,6 +20,9 @@ projects[adminrole][version] = 1.3
 projects[advanced_help][subdir] = contrib
 projects[advanced_help][version] = 1.2
 
+projects[autoload][subdir] = contrib
+projects[autoload][version] = 2.1
+
 projects[auto_nodetitle][subdir] = contrib
 projects[auto_nodetitle][version] = 1.2
 
@@ -50,11 +53,17 @@ projects[ctools][version] = 1.10
 projects[date][subdir] = contrib
 projects[date][version] = 2.8
 
+projects[dbtng][subdir] = contrib
+projects[dbtng][version] = 1.0-rc4
+
 projects[demo][subdir] = contrib
 projects[demo][version] = 1.4
 
 projects[disable_messages][subdir] = contrib
 projects[disable_messages][version] = 1.1
+
+projects[elements][subdir] = contrib
+projects[elements][version] = 1.2
 
 projects[email][subdir] = contrib
 projects[email][version] = 1.2
@@ -130,6 +139,9 @@ projects[menu_block][version] = 2.4
 
 projects[menu_breadcrumb][subdir] = contrib
 projects[menu_breadcrumb][version] = 1.3
+
+projects[migrate][subdir] = contrib
+projects[migrate][version] = 2.5
 
 projects[mimemail][subdir] = contrib
 projects[mimemail][version] = 1.0
@@ -247,7 +259,7 @@ projects[ncstateofficialgeneralfeature][type] = module
 projects[ncstateofficialgeneralfeature][subdir] = ncstate
 projects[ncstateofficialgeneralfeature][download][type] = git
 projects[ncstateofficialgeneralfeature][download][url] = git://github.com/ncsuwebdev/Drupal-6-NC-State-Official-General-Feature.git
-projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.3
+projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.4
 
 projects[ncstate_official][subdir] = ncstate
 projects[ncstate_official][version] = 2.6
