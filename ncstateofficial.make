@@ -262,7 +262,7 @@ projects[ncstateofficialgeneralfeature][download][url] = git://github.com/ncsuwe
 projects[ncstateofficialgeneralfeature][download][branch] = 6.x-1.4
 
 projects[ncstate_official][subdir] = ncstate
-projects[ncstate_official][version] = 2.6
+projects[ncstate_official][version] = 2.7
 projects[ncstate_official][location] = "http://drupal.ncsu.edu/features/fserver"
 
 projects[wraplogin][subdir] = ncstate
